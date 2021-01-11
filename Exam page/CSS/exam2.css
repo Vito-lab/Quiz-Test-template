@@ -1,0 +1,67 @@
+#separatingLine2 {
+    display: none;
+}
+
+#exam2 {
+    display: none;
+    text-align: left;
+}
+
+#dropdownQuestions {
+    display: inline-block;
+    width: 500px;
+}
+
+    .boxTitle1 {
+        display: inline-block;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 0.2px;
+        margin-top: 6.8px;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+    }
+    
+    #textField {
+        margin-top: 7px;
+        font-size: 16px;
+        width: 422px;
+        height: auto;
+    }
+
+    .list1 {
+        display: inline-block;
+        margin-top: 7px;
+        width: 100px;
+    }
+    
+    .boxTitle2 {
+        display: none;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 0.2px;
+        margin-top: 6.8px;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+    }
+    
+    .list2 {
+        display: none;
+        margin-top: 7px;
+        width: 100px;
+    }
+
+    #textFieldComment {
+        display: inline-block;
+        margin: 7px 0px 250px 0px;
+        width: 482px;
+        height: 100px;
+        font-family: Calibri;
+        text-overflow: unset;
+    }
+
+#button2 {
+    display: none;
+}

@@ -1,0 +1,58 @@
+.navigationIcons {
+    display: inline-block;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    right: 1%;
+}
+    .answerColorAndNavigationIcon {
+        display: block;
+    }
+
+
+        .answerColorInIcon {
+            display: inline-block;
+            margin: 18.5px -6.9px 0px 0px;
+            height: 15px;
+            width: 15px;
+            background-color: gray;
+            border: white 2px solid;
+            border-radius: 50%;
+            border-radius: 30px;
+
+        }
+
+            .answerCheckingInColor {
+                display: none;
+                margin: 3px 0px 0px 3px;
+                height: 5px;
+                width: 5px;
+                border: white 2px solid;
+                border-radius: 50%;
+                border-radius: 50%;
+                background-color: white;
+
+            }
+        
+        .navigationIcon {
+            display: inline-block;
+            margin: 3px 0px;
+            height: 45px;
+            width: 45px;
+            line-height: 41px;
+            border: white 2px solid;
+            border-radius: 50%;
+            border-radius: 30px;
+            cursor: pointer;
+            text-align: center;
+            background-color: blue;
+            color: white;
+        }
+
+            a {
+                display: inline-block;
+                margin: 0px 0px 0px 0px;
+                font-size: 20px;
+                color: white;
+                
+            }

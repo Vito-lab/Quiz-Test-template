@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/exam1.css">
+    <link rel="stylesheet" href="./CSS/exam2.css">
+    <link rel="stylesheet" href="./CSS/images.css">
+    <link rel="stylesheet" href="./CSS/navigationIcons.css">
+    <title>Exam</title>
+    <script src="./JS/navigationIcons.js"></script>
+    <script src="./JS/iconColors.js"></script>
+    <script src="./JS/assessor.js"></script>
+    <script src="./JS/disableInputButtons.js"></script>
+    <script src="./JS/answerColors.js"></script>
+    <script src="./JS/dropdowns.js"></script>
+    <script src="./JS/dropdownImages.js"></script>
+    <script src="./JS/dropdownIMGList1A.js"></script>
+    <script src="./JS/dropdownIMGList1B.js"></script>
+    <script src="./JS/dropdownIMGList1C.js"></script>
+    <script src="./JS/testFinished.js"></script>
+</head>
+<body>
+    <section>
+        <main>
+            <h2>This is the exam</h2>
+            <div id="separatingLine1" class="separatingLine">Test Questions</div>
+            <form id="exam1" name="exam1">
+                <div class="question" onclick="showIconIfCheckedQ1()">
+                    <img class="questionIcon" src="Images/Sphere.png">
+                    <div id="q1" class="questionTitle">Question 1</div>
+                    <p id="q1_W1"><input type="radio" id="option1_W1" name="option1" value="wrong">wrong</p>
+                    <p id="q1_W2"><input type="radio" id="option1_W2" name="option1" value="wrong">wrong</p>
+                    <p id="q1_W3"><input type="radio" id="option1_W3" name="option1" value="wrong">wrong</p>
+                    <p id="q1_R1"><input type="radio" id="option1_R1" name="option1" value="right">right</p>
+                </div>
+                
+                <div class="question" onclick="showIconIfCheckedQ2()">
+                    <img class="questionIcon" src="Images/Sphere.png">
+                    <div id="q2" class="questionTitle">Question 2</div>
+                    <p id="q2_W1"><input type="radio" id="option2_W1" name="option2" value="wrong">wrong</p>
+                    <p id="q2_W2"><input type="radio" id="option2_W2" name="option2" value="wrong">wrong</p>
+                    <p id="q2_W3"><input type="radio" id="option2_W3" name="option2" value="wrong">wrong</p>
+                    <p id="q2_R1"><input type="radio" id="option2_R1" name="option2" value="right">right</p>
+                </div>
+                
+                <div class="question" onclick="showIconIfCheckedQ3()">
+                    <img class="questionIcon" src="Images/Sphere.png">
+                    <div id="q3" class="questionTitle">Question 3</div>
+                    <img id="imageQuestion3" src="Images/ColorBlack.jpg">
+                    <p id="q3_W1"><input type="radio" id="option3_W1" name="option3" value="wrong">wrong</p>
+                    <p id="q3_W2"><input type="radio" id="option3_W2" name="option3" value="wrong">wrong</p>
+                    <p id="q3_W3"><input type="radio" id="option3_W3" name="option3" value="wrong">wrong</p>
+                    <p id="q3_R1"><input type="radio" id="option3_R1" name="option3" value="right">right</p>
+                </div>
+                
+                <div class="question" onclick="showIconIfCheckedQ4()">
+                    <img class="questionIcon" src="Images/Sphere.png">
+                    <div id="q4" class="questionTitle">Question 4</div>
+                    <p id="q4_W1"><input type="radio" id="option4_W1" name="option4" value="wrong">
+                        <img class="imageQuestion4" src="Images/ColorBlack.jpg">
+                    </p>
+                    <p id="q4_W2"><input type="radio" id="option4_W2" name="option4" value="wrong">
+                        <img class="imageQuestion4" src="Images/ColorBlack.jpg">
+                    </p>
+                    <p id="q4_W3"><input type="radio" id="option4_W3" name="option4" value="wrong">
+                        <img class="imageQuestion4" src="Images/ColorBlack.jpg">
+                    </p>
+                    <p id="q4_R1"><input type="radio" id="option4_R1" name="option4" value="right">
+                        <img class="imageQuestion4" src="Images/ColorWhite.jpg">
+                    </p>
+                </div>
+                
+                <div class="question" onclick="showIconIfCheckedQ5()">
+                    <img class="questionIcon" src="Images/Sphere.png">
+                    <div id="q5" class="questionTitle">Question 5</div>
+                    <p id="q5_W1"><input type="checkbox" id="option5_W1" name="option5" value="wrong">wrong</p>
+                    <p id="q5_R1"><input type="checkbox" id="option5_R1" name="option5" value="right">right</p>
+                    <p id="q5_R2"><input type="checkbox" id="option5_R2" name="option5" value="right">right</p>
+                    <p id="q5_W2"><input type="checkbox" id="option5_W2" name="option5" value="wrong">wrong</p>
+                </div>
+            </form>
+            <input type="button" id="button1" class="button" value="Finish Test (1/2)" onclick="assess()">
+            <p id="result"></p>
+
+
+
+
+            <div id="separatingLine2" class="separatingLine">Open Questions</div>
+                
+
+
+            <!-- THIS IS DROPDOWN QUESTION. QUESTION 1 -->
+            <form id="exam2" name="exam2">
+                <div class="question" onclick="showIconIfCheckedQ6()">
+                    <img class="questionIcon" src="Images/Sphere.png">
+                    <div id="q6" class="questionTitle">Question 6</div>
+                    <div id="dropdownQuestions">
+                        <label for="box" id="boxTitle1_1" class="boxTitle1">Name</label>
+                        <input type="text" id="textField" name="textField" onclick="this.value='' " onkeyup="fillIntoImage(); charFit()"><br>
+                        
+                        <label for="list1" id="boxTitle1_2" class="boxTitle1">List 1</label>
+                        <select id="list1_1" class="list1">
+                            <option onclick="list1Option0(); list1Option0Images(); closeAllList2Dropdowns()"></option>
+                            <option onclick="list1OptionA(); list1OptionAImages(); closeList2Dropdowns_A()">Option 1A</option>
+                            <option onclick="list1OptionB(); list1OptionBImages(); closeList2Dropdowns_B()">Option 1B</option>
+                            <option onclick="list1OptionC(); list1OptionCImages(); closeList2Dropdowns_C()">Option 1C</option>
+                        </select>
+
+                        <label for="list2" id="boxTitle2_1" class="boxTitle2">List 2</label>
+                        <select id="list2_1" class="list2">
+                            <option onclick="list2_list2_0()"></option>
+                            <option onclick="list2_list2()">Option 2A</option>
+                            <option onclick="list2_list2()">Option 2B</option>
+                            <option onclick="list2_list2()">Option 2C</option>
+                        </select>
+                        
+                        <label for="list2" id="boxTitle2_2" class="boxTitle2">List 3</label>
+                        <select id="list2_2" class="list2">
+                            <option onclick="list2_list3_0()"></option>
+                            <option onclick="list2_list3()">Option 3A</option>
+                            <option onclick="list2_list3()">Option 3B</option>
+                            <option onclick="list2_list3()">Option 3C</option>
+                        </select>
+                        
+                        <label for="list2" id="boxTitle2_3" class="boxTitle2">List 4</label>
+                        <select id="list2_3" class="list2">
+                            <option onclick="list2_list4_0()"></option>
+                            <option onclick="list2_list4()">Option 4A</option>
+                            <option onclick="list2_list4()">Option 4B</option>
+                            <option onclick="list2_list4()">Option 4C</option>
+                        </select>
+                        
+                        <label for="list2" id="boxTitle2_4" class="boxTitle2">List 5</label>
+                        <select id="list2_4" class="list2">
+                            <option onclick="list2_list5_0()"></option>
+                            <option onclick="list2_list5()">Option 5A</option>
+                            <option onclick="list2_list5()">Option 5B</option>
+                            <option onclick="list2_list5()">Option 5C</option>
+                        </select>
+                        
+                        <label for="list2" id="boxTitle2_5" class="boxTitle2">List 6</label>
+                        <select id="list2_5" class="list2">
+                            <option onclick="list2_list6_0()"></option>
+                            <option onclick="list2_list6()">Option 6A</option>
+                            <option onclick="list2_list6()">Option 6B</option>
+                            <option onclick="list2_list6()">Option 6C</option>
+                        </select>
+                        
+                        <label for="list2" id="boxTitle2_6" class="boxTitle2">List 7</label>
+                        <select id="list2_6" class="list2">
+                            <option onclick="list2_list7_0()"></option>
+                            <option onclick="list2_list7()">Option 7A</option>
+                            <option onclick="list2_list7()">Option 7B</option>
+                            <option onclick="list2_list7()">Option 7C</option>
+                        </select>
+                        
+                        <label for="list2" id="boxTitle2_7" class="boxTitle2">List 8</label>
+                        <select id="list2_7" class="list2">
+                            <option onclick="list2_list8_0()"></option>
+                            <option onclick="list2_list8()">Option 8A</option>
+                            <option onclick="list2_list8()">Option 8B</option>
+                            <option onclick="list2_list8()">Option 8C</option>
+                        </select><br>
+                        
+                        <label for="box" id="boxTitle1_3" class="boxTitle1">Comment</label><br>
+                        <textarea id="textFieldComment" name="textFieldComment"></textarea><br> 
+                    </div>
+
+                    <!-- THIS IS CUSTOM IMAGE -->
+                    <div class="dropdownImages">
+                        <img class="mainDropdownImages" src="Images/BlackHole.jpg">
+                        <div class="hiddenDropdownImages">
+                            <input type="text" id="boxIntoImage" readonly>
+                            <img id="hiddenDropdownImage1" src="Images/Dropdown Images/Dropdown1.png">
+                            <img id="hiddenDropdownImage2List2" src="Images/Dropdown Images/List2.png">
+                            <img id="hiddenDropdownImage3List3" src="Images/Dropdown Images/List3.png">
+                            <img id="hiddenDropdownImage4List4" src="Images/Dropdown Images/List4.png">
+                            <img id="hiddenDropdownImage5List5" src="Images/Dropdown Images/List5.png">
+                            <img id="hiddenDropdownImage6List6" src="Images/Dropdown Images/List6.png">
+                            <img id="hiddenDropdownImage7List7" src="Images/Dropdown Images/List7.png">
+                            <img id="hiddenDropdownImage8List8" src="Images/Dropdown Images/List8.png">
+                        </div>
+                    </div>
+                </div>
+                <!-- THIS IS THE END OF DROPDOWN QUESTION. QUESTION 1 -->
+            </form>
+            <input type="button" id="button2" class="button" value="Finish Test (2/2)" onclick="testFinished()">
+        </main>
+    </section>
+
+
+
+    <div class="navigationIcons">
+        
+        <div class="answerColorAndNavigationIcon">
+            <div id="answerColorInIconQ1" class="answerColorInIcon">
+                <div id="answerCheckingInColorQ1" class="answerCheckingInColor"></div>
+            </div>
+            <div id="navigationIconQ1" class="navigationIcon" onclick="navigateToQ1()">
+                <a>1</a>
+            </div>
+        </div>
+
+        <div class="answerColorAndNavigationIcon">
+            <div id="answerColorInIconQ2" class="answerColorInIcon">
+                <div id="answerCheckingInColorQ2" class="answerCheckingInColor"></div>
+            </div>
+            <div id="navigationIconQ2" class="navigationIcon" onclick="navigateToQ2()">
+                <a>2</a>
+            </div>
+        </div>
+        
+        <div class="answerColorAndNavigationIcon">
+            <div id="answerColorInIconQ3" class="answerColorInIcon">
+                <div id="answerCheckingInColorQ3" class="answerCheckingInColor"></div>
+            </div>
+            <div id="navigationIconQ3" class="navigationIcon" onclick="navigateToQ3()">
+                <a>3</a>
+            </div>
+        </div>
+        
+        <div class="answerColorAndNavigationIcon">
+            <div id="answerColorInIconQ4" class="answerColorInIcon">
+                <div id="answerCheckingInColorQ4" class="answerCheckingInColor"></div>
+            </div>
+            <div id="navigationIconQ4" class="navigationIcon" onclick="navigateToQ4()">
+                <a>4</a>
+            </div>
+        </div>
+
+        <div class="answerColorAndNavigationIcon">
+            <div id="answerColorInIconQ5" class="answerColorInIcon">
+                <div id="answerCheckingInColorQ5" class="answerCheckingInColor"></div>
+            </div>
+            <div id="navigationIconQ5" class="navigationIcon" onclick="navigateToQ5()">
+                <a>5</a>
+            </div>
+        </div>
+        
+        <div class="answerColorAndNavigationIcon">
+            <div id="answerColorInIconQ6" class="answerColorInIcon">
+                <div id="answerCheckingInColorQ6" class="answerCheckingInColor"></div>
+            </div>
+            <div id="navigationIconQ6" class="navigationIcon" onclick="navigateToQ6()">
+                <a>6</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

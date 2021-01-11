@@ -1,0 +1,90 @@
+body {
+    display:inline-block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../Images/Your\ Image\ Here.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    overflow: scroll;
+}
+
+    section {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        opacity: unset;
+        height: 100vh;
+    }
+    
+        main {
+        display: inline-block;
+        margin: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 80%;
+        background-size: contain;
+        background-color: rgba(250, 250, 250, 0.25);
+        font-size: 16px;
+        }
+
+            h2 {
+                font-size: 80px;
+                font-family: sans-serif;
+                color: steelblue;
+                text-transform: uppercase;
+                text-shadow: -3px -3px rgb(0,0,0);
+
+            }
+
+                .question {
+                    padding-top: 50px;
+                    /* background-color: tomato; */
+                }
+
+                    .questionIcon {
+                        margin-left: -50px;
+                        margin-top: -8px;
+                        float: left;
+                        width: 50px;
+                    }
+                
+                    .questionTitle {
+                        font-size: 30px;
+                        margin: 0px 300px 0px -30px;
+                        padding-left: 30px;
+                        border: white 2px solid;
+                        border-radius: 25px;
+                        background-color: blue;
+                        color: white;
+                    }
+                    
+                    input {
+                        display: inline-block;
+                        margin-top: -1px;
+                        vertical-align: middle;
+                    }
+                
+            .button {
+                display: block;
+                margin: 200px auto 100px auto;
+                padding: 5px 10px;
+                border: white 2px solid;
+                border-radius: 5px;
+                font-size: 30px;
+                background-color: blue;
+                color: white;
+            }
+
+            .separatingLine {
+                margin: 150px 0 150px 0;
+                padding: 50px 0 0 0;
+                /* border-top: blue 10px solid; */
+                font-size: 50px;
+                font-weight: 900;
+                color: steelblue;
+                text-shadow: 1.5px 1.5px black, -1.5px 1.5px black, -3px -3px black, 1.5px -1.5px black;
+                /* border-bottom: blue 10px solid; */
+            }
